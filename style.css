@@ -1,0 +1,214 @@
+*{
+    padding-top: 0;
+    margin: 0;
+}
+
+
+
+body{
+background-image: url('images/bg.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+overflow-x: hidden; /* 隱藏水平滾動條 */
+display: flex;
+flex-direction: column;min-height: 100vh;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+
+@media screen and (max-width: 540px) {
+    body {
+        margin-top: 80px;
+    }}
+
+
+.content{
+    flex: 1 0 auto;
+}
+
+@media screen and (max-width: 540px) {
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: transparent;
+        transition: background 0.3s ease-in-out;
+        z-index: 9;
+      }
+      #navbar.scrolled {
+        background: rgba(255, 255, 255, 0.775); /* 這裡的 rgba(0, 0, 0, 0.7) 是半透明的黑色，你可以根據需要調整 */
+        backdrop-filter: blur(20px);
+      }
+  }
+
+  
+
+.navbar-nav{
+display: flex;
+border: solid 2px black;
+
+}
+
+.img-fluid{
+    width: 18rem;
+    padding: 1.5rem;
+    padding-left: 3rem;
+    
+}
+
+.dropdown-menu {
+    color: black;
+
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.container{
+    max-width: 500px;
+    background-color: #fffdfd8a;
+    border: 1.5px solid #eafcff;
+    padding: 40px 50px 40px 50px ;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+   box-shadow: 10px #5a5a5a;
+
+    
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+        max-width: 350px;
+    }
+  }
+
+.form-check{
+    display: flex;
+    justify-content: end;
+}
+
+.form-check-input{
+    margin-right: 10px;
+
+}
+
+.vaild{
+    max-width: 500px;
+    padding-left: 0; 
+    padding-right: 0;
+    margin: 0;
+    display: flex;
+   
+}
+
+
+
+
+.form-control{
+
+border-radius: 30px;
+
+}
+
+.return{
+
+display: flex;
+justify-content: end;
+font-weight: 800;
+margin: 0;
+}
+
+
+.return a{
+    color: #00C3E2;
+    padding-top: 10px
+}
+
+.btn-1{
+    background-color: #00C3E2;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.btn-1:hover {
+    background-color: #31a8c6; /* 滑鼠懸停時的背景顏色 */
+    color: white; /* 滑鼠懸停時的文字顏色 */
+    box-shadow: 2px 2px 10px #ffffff;
+}
+
+.text-1{
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+   
+    
+}
+
+.text-1 a{
+font-weight: 600;
+color: #00C3E2;
+;
+}
+
+
+.form-label {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container-fliud-footer{
+    background-color: #EFEFEF;
+    margin-top: 60px;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+   
+
+   
+}
+
+.items{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.nav-link{
+    color: #5a5a5a;
+    font-weight: 800;
+}
+
+
+
+.nav-link:hover{
+    color: #00C3E2 !important; 
+    font-weight: 800;
+
+}
+
+.valid {
+    border-color: green;
+  }
+  
+  .invalid {
+    border-color: red;
+  }
+  
