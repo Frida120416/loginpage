@@ -38,7 +38,7 @@ min-height: 100vh;
         z-index: 9;
       }
       #navbar.scrolled {
-        background: rgba(255, 255, 255, 0.775); /* 這裡的 rgba(0, 0, 0, 0.7) 是半透明的黑色，你可以根據需要調整 */
+        background: rgb(255, 255, 255); /* 這裡的 rgba(0, 0, 0, 0.7) 是半透明的黑色，你可以根據需要調整 */
         backdrop-filter: blur(20px);
       }
   }
